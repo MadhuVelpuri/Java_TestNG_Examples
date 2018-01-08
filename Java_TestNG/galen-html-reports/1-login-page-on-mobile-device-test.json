@@ -1,0 +1,126 @@
+{
+  "testId" : "1-login-page-on-mobile-device-test",
+  "name" : "Login page on mobile device test",
+  "report" : {
+    "nodes" : [ {
+      "name" : "check layout on mobile device",
+      "status" : "error",
+      "time" : 1488815933582,
+      "includedTags" : [ "desktop" ],
+      "excludedTags" : [ ],
+      "sections" : [ {
+        "name" : "Main section",
+        "place" : {
+          "filePath" : "D:\\Madhu\\WebMD\\Projects\\Java_TestNG\\homed.gspec",
+          "lineNumber" : 15
+        },
+        "objects" : [ {
+          "name" : "logo",
+          "specs" : [ {
+            "status" : "error",
+            "place" : {
+              "filePath" : "D:\\Madhu\\WebMD\\Projects\\Java_TestNG\\homed.gspec",
+              "lineNumber" : 19
+            },
+            "name" : "height 66px",
+            "errors" : [ "\"logo\" is absent on page" ],
+            "highlight" : [ ]
+          }, {
+            "status" : "error",
+            "place" : {
+              "filePath" : "D:\\Madhu\\WebMD\\Projects\\Java_TestNG\\homed.gspec",
+              "lineNumber" : 20
+            },
+            "name" : "width 200px",
+            "errors" : [ "\"logo\" is absent on page" ],
+            "highlight" : [ ]
+          } ]
+        }, {
+          "name" : "phne",
+          "specs" : [ {
+            "status" : "error",
+            "place" : {
+              "filePath" : "D:\\Madhu\\WebMD\\Projects\\Java_TestNG\\homed.gspec",
+              "lineNumber" : 23
+            },
+            "name" : "height 20 to 30px",
+            "errors" : [ "\"phne\" is absent on page" ],
+            "highlight" : [ ]
+          }, {
+            "status" : "error",
+            "place" : {
+              "filePath" : "D:\\Madhu\\WebMD\\Projects\\Java_TestNG\\homed.gspec",
+              "lineNumber" : 24
+            },
+            "name" : "width 20 to 30px",
+            "errors" : [ "\"phne\" is absent on page" ],
+            "highlight" : [ ]
+          } ]
+        }, {
+          "name" : "flight",
+          "specs" : [ {
+            "status" : "error",
+            "place" : {
+              "filePath" : "D:\\Madhu\\WebMD\\Projects\\Java_TestNG\\homed.gspec",
+              "lineNumber" : 26
+            },
+            "name" : "height 35 to 50px",
+            "errors" : [ "\"flight\" is absent on page" ],
+            "highlight" : [ ]
+          } ]
+        }, {
+          "name" : "roundtrip",
+          "specs" : [ {
+            "status" : "error",
+            "place" : {
+              "filePath" : "D:\\Madhu\\WebMD\\Projects\\Java_TestNG\\homed.gspec",
+              "lineNumber" : 29
+            },
+            "name" : "below flight",
+            "errors" : [ "\"roundtrip\" is absent on page" ],
+            "highlight" : [ ]
+          } ]
+        }, {
+          "name" : "origin",
+          "specs" : [ {
+            "status" : "error",
+            "place" : {
+              "filePath" : "D:\\Madhu\\WebMD\\Projects\\Java_TestNG\\homed.gspec",
+              "lineNumber" : 35
+            },
+            "name" : "below roundtrip",
+            "errors" : [ "\"origin\" is absent on page" ],
+            "highlight" : [ ]
+          } ]
+        }, {
+          "name" : "adult",
+          "specs" : [ {
+            "status" : "error",
+            "place" : {
+              "filePath" : "D:\\Madhu\\WebMD\\Projects\\Java_TestNG\\homed.gspec",
+              "lineNumber" : 41
+            },
+            "name" : "above currency",
+            "errors" : [ "\"adult\" is absent on page" ],
+            "highlight" : [ ]
+          } ]
+        }, {
+          "name" : "currency",
+          "specs" : [ {
+            "status" : "error",
+            "place" : {
+              "filePath" : "D:\\Madhu\\WebMD\\Projects\\Java_TestNG\\homed.gspec",
+              "lineNumber" : 47
+            },
+            "name" : "below adult",
+            "errors" : [ "\"currency\" is absent on page" ],
+            "highlight" : [ ]
+          } ]
+        } ]
+      } ],
+      "objects" : { },
+      "screenshot" : "layout-1-screenshot.png",
+      "type" : "layout"
+    } ]
+  }
+}

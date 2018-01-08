@@ -1,0 +1,52 @@
+<project name="Project Name" basedir=".">
+	<!-- Create class path  for jar files-->
+	<path id="jarfile">
+		<!-- .class files location-->
+		<pathelement location="${basedir}/lib" />
+		<!-- jar files location-->
+		<fileset dir="${basedir}/lib">
+			<!-- include .jar files-->
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+
+	<!-- Create target compile , name can be anything-->
+	<target name="compile">
+		<!-- delette bin folder in project-->
+		<delete dir="${basedir}/build" />
+		<!-- create bin folder in project-->
+		<mkdir dir="${basedir}/build" />
+
+		<!-- compile .java files to .class file , files will be stored in bin folder-->
+		<javac srcdir="${basedir}/src" destdir="${basedir}/build" classpathref="jarfile" />
+				
+	</target>
+	<!-- close target-->
+
+
+	<!-- create class path testng file-->
+	<taskdef name="testng1" classname="org.testng.TestNGAntTask" classpathref="jarfile" />
+
+	<!-- run taget starts, depends on compile-->
+	<target name="testng" >
+		<!-- create reports folder in project-->
+		<mkdir dir="${basedir}/reports" />
+		<testng1 outputdir="${basedir}/reports" classpathref="jarfile" testname="Regression">
+			<!-- execute testng.xml file-->
+			<xmlfileset dir="${basedir}" includes="testNg.xml"/>
+			
+		</testng1>
+	</target>
+
+	<target name="xslt">
+		<mkdir dir="${basedir}/XSLT_Reports/output" />
+
+		<xslt in="${basedir}/test-output/testng-results.xml" style="${basedir}/testng-results.xsl" out="${basedir}/XSLT_Reports/output/index.html" classpathref="jarfile" processor="SaxonLiaison">
+
+			<param name="testNgXslt.outputDir" expression="${basedir}/XSLT_Reports/output/" />
+			<param name="testNgXslt.showRuntimeTotals" expression="true" />
+		</xslt>
+	</target>
+
+</project>

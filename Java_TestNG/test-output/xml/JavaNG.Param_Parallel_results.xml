@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test_FF"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="2.638">
+  <properties />
+  
+  
+            <testcase name="verify_title" time="1.191" classname="JavaNG.Param_Parallel" />
+                <testcase name="verify_message" time="1.447" classname="JavaNG.Param_Parallel" />
+      
+</testsuite>

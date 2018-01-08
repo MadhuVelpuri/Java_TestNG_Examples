@@ -1,0 +1,9 @@
+<suite name="Medscape">
+	<test name="Regression">
+		<classes>
+			<class name="com.javang.Assertions">
+				
+			</class>
+		</classes>
+	</test>
+</suite> 

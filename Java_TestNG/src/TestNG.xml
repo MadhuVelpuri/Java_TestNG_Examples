@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" verbose="1" thread-count="2">
+	<!-- To get enhanced reports using ReportNG Should add guice-3.0.jar, reportng-1.1.4.jar, 
+		velocity-dep-1.4.jar and the below two listener classes. -->
+
+	<!-- <listeners> <listener class-name="org.uncommons.reportng.HTMLReporter" 
+		/> <listener class-name="org.uncommons.reportng.JUnitXMLReporter" /> </listeners>
+ -->
+	<!-- <test name="sampleTest" priority = "1"> <classes> <class name = "com.javang.Priority"> 
+		</class> </classes> </test> -->
+
+	<!-- to execute a test in a basic way -->
+	<test name="Simple">
+		<classes>
+			<class name="com.javang.Sample">
+				<methods>
+					<include name="assertequal" />
+					<include name="assertnotequal" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- For parallel Execution -->
+	<!-- <test name="Test_FF"> <parameter name="browser" value="FF"/> <classes> 
+		<class name="com.javang.Param_Parallel"> </class> </classes> </test> <test 
+		name="Test_Chrome"> <parameter name="browser" value="CHM"/> <classes> <class 
+		name="com.javang.Param_Parallel"> </class> </classes> </test> -->	<!-- To execute multiple classes as different tests -->
+
+	<!-- <test name="webdriver_first"> <classes> <class name="Webdriver_TestNG.ClassOne"> 
+		</class>> </classes> </test> <test name="webdriver_second"> <classes> <class 
+		name="Webdriver_TestNG.ClassTwo"> </class>> </classes> </test> -->
+	<!-- To execute multiple classes from multiple packages and using exclude 
+		functionality -->
+
+	<!-- <test name="Multiple_Packages" > <classes> <class name="Webdriver_TestNG.ClassOne"> 
+		<methods> <exclude name="testmethodone" /> </methods> </class> <class name="Webdriver_TestNG_Dup.ClassOne" 
+		/> </classes> </test> -->
+
+	<!-- To execute packages wise -->
+
+	<!-- <test name="Packages_Execution" > <packages> <package name="Webdriver_TestNG" 
+		/> <package name="Webdriver_TestNG_Dup" /> To run all packages <packages> 
+		<package name=".*" /> </packages> To exclude packages <packages> <package 
+		name=".*"> <exclude name="TestNGThreePack" /> </package> </packages> </packages> 
+		</test> -->
+
+	<!-- To use data providers -->
+	<!-- <test name="Data-providers"> <packages> <package name="DataProviders"> 
+		</package> </packages> </test> > -->
+	<!-- To execute test methods as group wise. Order of the elements are important. 
+		First comes the parameters, then groups, and classes should be the last element 
+		in the test element. That's the correct format of configuration file: -->
+	<!-- <test name="GroupTest"> <groups> <run> <include name="check-mail" /> 
+		<exclude name="ViewNews" /> </run> </groups> <classes> <class name="com.java.Grouping" 
+		/> </classes> </test> -->
+
+
+	<!-- selenium grid - Parallel execution -->
+
+	<!-- <tests> Set test parameters to execute test in IE browser on windows 
+		plateform. <test name="Windows+IE Test"> <parameters> <parameter name="platform" 
+		value="Windows" /> <parameter name="browser" value="Internet Explorer" /> 
+		<parameter name="url" value="http://only-testing-blog.blogspot.in/2014/01/textbox.html" 
+		/> </parameters> <classes> <class name="WebDriver.SeGridTest" /> </classes> 
+		</test> Set test parameters to execute test in Firefox browser on windows 
+		plateform. <test name="Windows+Firefox Test" > <parameters> <parameter name="platform" 
+		value="Windows" /> <parameter name="browser" value="Firefox" /> <parameter 
+		name="url" value="http://only-testing-blog.blogspot.in/2014/01/textbox.html" 
+		/> </parameters> <classes> <class name="WebDriver.SeGridTest" /> </classes> 
+		</test> Set test parameters to execute test in chrome browser on windows 
+		plateform. <test name="Windows+chrome Test" > <parameters> <parameter name="platform" 
+		value="Windows" /> <parameter name="browser" value="chrome" /> <parameter 
+		name="url" value="http://only-testing-blog.blogspot.in/2014/01/textbox.html" 
+		/> </parameters> <classes> <class name="WebDriver.SeGridTest" /> </classes> 
+		</test> </tests> -->
+</suite> <!-- Suite -->

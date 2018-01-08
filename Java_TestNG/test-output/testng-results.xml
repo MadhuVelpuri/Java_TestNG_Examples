@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="29" started-at="2017-10-23T13:07:46Z" finished-at="2017-10-23T13:07:46Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="29" started-at="2017-10-23T13:07:46Z" finished-at="2017-10-23T13:07:46Z">
+      <class name="com.javang.TestNGHeirarchy">
+        <test-method status="PASS" signature="test_bfSuite()[pri:0, instance:com.javang.TestNGHeirarchy@721e0f4f]" name="test_bfSuite" is-config="true" duration-ms="9" started-at="2017-10-23T18:37:46Z" finished-at="2017-10-23T18:37:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_bfSuite -->
+        <test-method status="PASS" signature="test_bfTest()[pri:0, instance:com.javang.TestNGHeirarchy@721e0f4f]" name="test_bfTest" is-config="true" duration-ms="1" started-at="2017-10-23T18:37:46Z" finished-at="2017-10-23T18:37:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_bfTest -->
+        <test-method status="PASS" signature="test_bfClass()[pri:0, instance:com.javang.TestNGHeirarchy@721e0f4f]" name="test_bfClass" is-config="true" duration-ms="0" started-at="2017-10-23T18:37:46Z" finished-at="2017-10-23T18:37:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_bfClass -->
+        <test-method status="PASS" signature="test_bfMethod()[pri:0, instance:com.javang.TestNGHeirarchy@721e0f4f]" name="test_bfMethod" is-config="true" duration-ms="0" started-at="2017-10-23T18:37:46Z" finished-at="2017-10-23T18:37:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_bfMethod -->
+        <test-method status="PASS" signature="test_testMethod()[pri:0, instance:com.javang.TestNGHeirarchy@721e0f4f]" name="test_testMethod" duration-ms="5" started-at="2017-10-23T18:37:46Z" finished-at="2017-10-23T18:37:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_testMethod -->
+        <test-method status="PASS" signature="test_testMethod2()[pri:0, instance:com.javang.TestNGHeirarchy@721e0f4f]" name="test_testMethod2" duration-ms="3" started-at="2017-10-23T18:37:46Z" finished-at="2017-10-23T18:37:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_testMethod2 -->
+        <test-method status="PASS" signature="test_afMethod()[pri:0, instance:com.javang.TestNGHeirarchy@721e0f4f]" name="test_afMethod" is-config="true" duration-ms="0" started-at="2017-10-23T18:37:46Z" finished-at="2017-10-23T18:37:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_afMethod -->
+        <test-method status="PASS" signature="test_bfMethod()[pri:0, instance:com.javang.TestNGHeirarchy@721e0f4f]" name="test_bfMethod" is-config="true" duration-ms="0" started-at="2017-10-23T18:37:46Z" finished-at="2017-10-23T18:37:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_bfMethod -->
+        <test-method status="PASS" signature="test_afMethod()[pri:0, instance:com.javang.TestNGHeirarchy@721e0f4f]" name="test_afMethod" is-config="true" duration-ms="0" started-at="2017-10-23T18:37:46Z" finished-at="2017-10-23T18:37:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_afMethod -->
+        <test-method status="PASS" signature="test_afClass()[pri:0, instance:com.javang.TestNGHeirarchy@721e0f4f]" name="test_afClass" is-config="true" duration-ms="0" started-at="2017-10-23T18:37:46Z" finished-at="2017-10-23T18:37:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_afClass -->
+        <test-method status="PASS" signature="test_afTest()[pri:0, instance:com.javang.TestNGHeirarchy@721e0f4f]" name="test_afTest" is-config="true" duration-ms="0" started-at="2017-10-23T18:37:46Z" finished-at="2017-10-23T18:37:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_afTest -->
+        <test-method status="PASS" signature="test_afSuite()[pri:0, instance:com.javang.TestNGHeirarchy@721e0f4f]" name="test_afSuite" is-config="true" duration-ms="0" started-at="2017-10-23T18:37:46Z" finished-at="2017-10-23T18:37:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_afSuite -->
+      </class> <!-- com.javang.TestNGHeirarchy -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

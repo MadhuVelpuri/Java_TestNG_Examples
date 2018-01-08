@@ -1,0 +1,17 @@
+{
+  "tests" : [ {
+    "name" : "Login page on mobile device test",
+    "startedAt" : 1488815933582,
+    "endedAt" : 1488815933582,
+    "failed" : true,
+    "statistic" : {
+      "passed" : 0,
+      "errors" : 9,
+      "warnings" : 0,
+      "total" : 9
+    },
+    "testId" : "1-login-page-on-mobile-device-test",
+    "failed" : true,
+    "duration" : 0
+  } ]
+}

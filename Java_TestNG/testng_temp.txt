@@ -1,0 +1,115 @@
+
+  <!-- to execute a test in a basic way -->
+  <!-- <test name ="Simple">
+  <classes>
+  <class name="JavaNG.Assertions">
+  <methods>
+  <include name="assertequal"/>
+  <include name="assertnotequal"/>
+  </methods>
+  </class>
+  </classes>
+  </test> -->
+  <!-- 
+  For parallel Execution>
+   <test name="Test_FF">
+   <parameter name="browser" value="CHM"/>
+    <classes>
+      <class name="JavaNG.Param_Parallel">
+      </class>
+    </classes>
+  </test> 
+  
+  <test name="Test_Chrome">
+  <parameter name="browser" value="CHM"/>
+    <classes>
+      <class name="JavaNG.Param_Parallel">
+      </class>
+    </classes>
+  </test> 
+   -->
+  <!-- To execute multiple classes as different tests -->
+  
+  <!-- 
+  <test name="webdriver_first">
+  <classes>
+  <class name="Webdriver_TestNG.ClassOne">
+  </class>>
+  </classes>
+  </test>
+  <test name="webdriver_second">
+  <classes>
+  <class name="Webdriver_TestNG.ClassTwo">
+  </class>>
+  </classes>
+  </test>
+   -->
+  
+  <!-- To execute multiple classes from multiple packages
+  and using exclude functionality
+   -->
+   
+  <!-- 	<test name="Multiple_Packages" >
+  <classes>
+   <class name="Webdriver_TestNG.ClassOne">
+   <methods>
+    <exclude name="testmethodone" />
+   </methods>
+    </class>
+   <class name="Webdriver_TestNG_Dup.ClassOne" />  
+  </classes>
+ </test> 
+  
+   --> 
+  <!--  To execute packages wise-->
+ 
+ <!--  <test name="Packages_Execution" >
+  <packages>
+   <package name="Webdriver_TestNG" />
+   <package name="Webdriver_TestNG_Dup" />
+   
+  To run all packages
+  
+    <packages>
+   <package name=".*" />   
+  </packages>
+  
+ 
+  
+  To exclude packages
+  
+  <packages>
+   <package name=".*">
+    <exclude name="TestNGThreePack" />
+   </package>
+  </packages>
+  
+     
+  </packages>
+ </test> 
+   --> 
+   
+   <!-- To use data providers -->
+  <!--  <test name="Data-providers">
+   <packages>
+   <package name="DataProviders">
+   </package> 
+   </packages>
+     </test>>-->
+     <!-- To execute test methods as group wise.
+     
+     Order of the elements are important. First comes the parameters, then groups, and classes 
+     should be the last element in the test element. 
+     That's the correct format of configuration file:
+       --><!-- 
+     <test name="GroupTest">
+     <groups>
+     <run>
+     <include name="check-mail"/></run>
+     </groups>
+     <classes>
+     <class name="JavaNG.Grouping"/>
+     </classes>
+     </test> -->
+     
+ 

@@ -1,0 +1,50 @@
+@objects
+
+    logo              xpath      //a[@class='spicejet_logo']
+	phne              xpath      //p[@class='Call-Center']//span[@class='call_icon']
+	flight            xpath      //a[@class='selected']
+    roundtrip         xpath      //div[@id='travelOptions']//label[text()='Round Trip']
+	oneway            xpath      //input[@id='ctl00_mainContent_rbtnl_Trip_1']
+	origin            xpath      //input[@id='ctl00_mainContent_ddl_originStation1_CTXT']
+	destination       xpath      //input[@id='ctl00_mainContent_ddl_destinationStation1_CTXT']
+	adult             id         ctl00_mainContent_ddl_Adult
+	child             id         ctl00_mainContent_ddl_Child
+	currency          id         ctl00_mainContent_DropDownListCurrency
+	find              id         ctl00_mainContent_btn_FindFlights
+	
+= Main section =
+	@on desktop
+		
+		logo:
+			height 66px 
+			width 200px
+			#near phne
+		phne:
+			height 20 to 30px
+			width 20 to 30px
+		flight:	
+			height 35 to 50px 
+			
+		roundtrip:
+			below flight
+			
+		oneway:
+			#near roundtrip
+		
+		origin:	
+			below roundtrip
+			
+		destination:
+			#right-of origin 10px
+		
+		adult:
+			above currency
+		
+		child:
+			#near adult
+	  
+		currency:
+			below adult
+		
+		find:
+			#color #fff

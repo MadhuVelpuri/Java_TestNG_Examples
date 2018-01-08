@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="webdriver_second"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="8.324">
+  <properties />
+  
+  
+            <testcase name="testmethodone" time="8.324" classname="Webdriver_TestNG.ClassTwo" />
+      
+</testsuite>
