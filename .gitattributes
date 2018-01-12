@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
-* text=auto
+Java_TestNG/test-output/* linguist-vendored
+Java_TestNG/galen-html-reports/* linguist-vendored
+Java_TestNG/testng-xslt/* linguist-vendored
+Java_TestNG/XSLT_Reports/* linguist-vendored
+
